@@ -1,7 +1,4 @@
-find_path(QT_CDD_DIR
-  include/Qtcore/QtCore
-  HINTS $ENV{QT5_PREFIX}/include
-  )
+find_package(Qt5 COMPONENTS Core Widgets REQUIRED)
 
 #if(CASADI_INCLUDE_DIR)
   #set(CASADI_INCLUDE_DIR ${CASADI_INCLUDE_DIR} ${CASADI_INCLUDE_DIR}/casadi)
